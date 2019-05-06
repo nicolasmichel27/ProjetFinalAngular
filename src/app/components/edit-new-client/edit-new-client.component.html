@@ -1,0 +1,38 @@
+<div class="newClient panel panel-default">
+  <div class="panel-heading">
+    <h4>Ajouter un Client</h4>
+  </div>
+ 
+  <div class="panel-body">
+ 
+    <div class="input-group">
+        <span class="input-group-addon">Nom: </span>
+        <input class="form-control" [(ngModel)]="client_in_progress.nom" type="text" placeholder="Client Nom" name="nom" />
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon">Tel: </span>
+        <input class="form-control" [(ngModel)]="client_in_progress.tel" type="text" placeholder="Client Telephone" name="tel" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Mail: </span>
+        <input class="form-control" [(ngModel)]="client_in_progress.mail" type="text" placeholder="Client Mail" name="mail" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Statut: </span>
+        <input class="form-control" [(ngModel)]="client_in_progress.statut" type="text" placeholder="Client Statut" name="statut" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Login: </span>
+        <input class="form-control" [(ngModel)]="client_in_progress.userName" type="text" placeholder="Client UserName" name="userName" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Mot de passe: </span>
+        <input class="form-control" [(ngModel)]="client_in_progress.passWord" type="text" placeholder="Client PassWord" name="passWord" />
+    </div>
+ 
+    <div class="input-group">
+      <input type="button" value="Ajouter Client" (click)="addUpdateClientClicked()"/>
+    </div>
+ 
+  </div>

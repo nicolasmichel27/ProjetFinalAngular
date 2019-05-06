@@ -1,0 +1,9 @@
+<h3>Liste des Reservations</h3>
+  
+  <div style="float: right; padding: 5px">
+    <input type="button" value="Faire une Reservation" (click)="addNewReservationPressed()"/>
+   </div>
+
+   <app-reservation-summary *ngFor="let reservation of reservations" [reservation]="reservation" (userClick)="userClickedOnReservation($event)"></app-reservation-summary>
+
+   <div style="clear: both"></div>

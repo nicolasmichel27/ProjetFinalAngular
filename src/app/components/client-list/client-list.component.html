@@ -1,0 +1,10 @@
+
+  <h3>Liste des Clients</h3>
+  
+  <div style="float: right; padding: 5px">
+    <input type="button" value="Ajouter un Client" (click)="addNewClientPressed()"/>
+   </div>
+  
+   <app-client-summary *ngFor="let client of clients" [client]="client" (userClick)="userClickedOnClient($event)"></app-client-summary>
+
+   <div style="clear: both"></div>
